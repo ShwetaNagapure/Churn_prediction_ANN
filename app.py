@@ -1,10 +1,9 @@
 import streamlit as st 
 import numpy as np
 import pandas as pd 
-import tensorflow as tf
 from sklearn.preprocessing import StandardScaler,LabelEncoder,OneHotEncoder
 import pickle
-
+import tensorflow as tf
 
 model=tf.keras.models.load_model("model/churn_prediction_model.keras")
 
