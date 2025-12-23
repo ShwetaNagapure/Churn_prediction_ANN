@@ -19,7 +19,6 @@ with open("model/scaler.pkl","rb") as file:
 
 st.title("Customer Churn Prediction")
 
-
 credit_score = st.number_input("Credit Score")
 geography = st.selectbox("Geography",onehot_encoder.categories_[0])
 gender = st.selectbox("Gender",label_encoder.classes_)
